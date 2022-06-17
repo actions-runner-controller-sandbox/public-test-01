@@ -6,7 +6,8 @@ on:
       - opened
       - synchronize
       - reopened
-      - closed
+  push:
+    branches: main
 
 env:
   RANDOM_STRING: ${{ secrets.RANDOM_STRING }}
